@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main ()
+{
+	int primeiro_numero;
+	int segundo_numero;
+	
+	int resultado;
+	
+
+	cout<<"Seja bem-vindo ao programa de numeros maiores da Misa! ^^"<<endl;	
+	cout<<"Para comecar, digite o primeiro numero: "<<endl;
+	cin>>primeiro_numero;
+	cout<<"Otimo! para continuarmos digite o segundo numero: ";
+	cin>>segundo_numero;
+					
+	if (primeiro_numero>segundo_numero)
+	{
+		resultado = primeiro_numero;	
+	}	
+	
+	else 
+	{
+		resultado = segundo_numero;
+	}
+	
+	cout<<"O maior numero digitado foi>: " << resultado << endl;
+	
+}
