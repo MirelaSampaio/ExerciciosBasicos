@@ -1,4 +1,6 @@
-int operacao;
+	/// Calculadora Baisca
+	
+	int operacao;
 	
 	int primeiro_soma;
 	int segundo_soma;
@@ -16,9 +18,9 @@ int operacao;
 	int segundo_mult;
 	int resultado_mult;
 	
-	cout<<"Seja bem-vindo ao programa de calculadora basica da Misa! ^^ \n";
-	cout<<"Para prosseguirmos, digite qual operacao voce deseja realizar \n 1 - Soma \n 2 - Subtracao \n 3 - Divisao \n 4 - Multiplicacao \n ";
-	cin>>operacao;
+	cout << "Seja bem-vindo ao programa de calculadora basica da Misa! ^^ \n";
+	cout << "Para prosseguirmos, digite qual operacao voce deseja realizar \n 1 - Soma \n 2 - Subtracao \n 3 - Divisao \n 4 - Multiplicacao \n ";
+	cin >> operacao;
 	
 	if (operacao = 1)
 	{
@@ -31,7 +33,7 @@ int operacao;
 		
 		cout << "O resultado da sua soma e: " << resultado_soma << endl;
 		
-		
+				
 	}
 	
 		if (operacao = 2)
@@ -75,7 +77,7 @@ int operacao;
 	
 	else
 	{
-		cout << "Erro! :( \n Digite uma operacao valida, aperte qualquer tecla para encerrar o programa.";
-		return 0;
+		cout << "Erro! :( \n Digite uma operacao valida, aperte qualquer tecla para voltar ao comeco.";
+		return main();
 	}
 	
