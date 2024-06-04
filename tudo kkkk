@@ -1,0 +1,154 @@
+#include<iostream>
+using namespace std;
+
+
+
+int main ()
+{
+	/// Exercício 01 
+	
+	int primeiro_numero;
+	int segundo_numero;
+	
+	int resultado_maior;
+	
+
+	cout << "Seja bem-vindo ao programa de numeros da Misa! ^^"<<endl;	
+	cout << "Para comecar, digite o primeiro numero: "<<endl;
+	cin >> primeiro_numero;
+	cout << "Otimo! para continuarmos digite o segundo numero: ";
+	cin >> segundo_numero;
+					
+	if (primeiro_numero>segundo_numero)
+	{
+		resultado_maior = primeiro_numero;	
+	}	
+	
+	else 
+	{
+		resultado_maior = segundo_numero;
+	}
+	
+	cout<<"O maior numero digitado foi>: " << resultado_maior << endl;
+	
+	cout << " ----------------------- FIM DO CODIGO ----------------------- \n";
+	
+	/// Exercicio 02
+	
+	int idade;
+	bool maiorIdade;
+	
+	cout << "Seja bem-vindo ao programa de maioridade da Misa! ^^ \n";
+	cout << "Para prosseguirmos, digite sua idade: ";
+	cin >> idade;
+	
+	// Existem duas alternativas nesse caso
+	
+	if (idade >= 18)
+	{
+		maiorIdade = true;
+		cout << "Parabens, voce ja e um adulto. \n";
+	}
+	else
+	{
+		maiorIdade = false;
+		cout << "Hmm.. Parece que voce ainda nao e adulto. \n";
+	}
+	
+	
+	if (maiorIdade == true)
+	{
+		cout << " FALA AE O VELHACO KKKKKK \n";
+	}
+	else
+	{
+		cout << " aproveita enquanto pode man, eventualmente a vida adulta vai chegar muahahahah \n";
+	}
+	
+	cout << " ----------------------- FIM DO CODIGO ----------------------- \n ";
+	
+	/// Calculadora Baisca
+	
+	int operacao;
+	
+	int primeiro_soma;
+	int segundo_soma;
+	int resultado_soma;
+	
+	int primeiro_sub;
+	int segundo_sub;
+	int resultado_sub;
+	
+	int primeiro_div;
+	int segundo_div;
+	int resultado_div;
+	
+	int primeiro_mult;
+	int segundo_mult;
+	int resultado_mult;
+	
+	cout << "Seja bem-vindo ao programa de calculadora basica da Misa! ^^ \n";
+	cout << "Para prosseguirmos, digite qual operacao voce deseja realizar \n 1 - Soma \n 2 - Subtracao \n 3 - Divisao \n 4 - Multiplicacao \n ";
+	cin >> operacao;
+	
+	if (operacao = 1)
+	{
+		cout << "A operacao selecionada foi Soma, digite o primeiro numero que deseja somar: ";
+		cin >> primeiro_soma;
+		cout << "Agora digite o numero que deseja adicionar: ";
+		cin >> segundo_soma;
+		
+		resultado_soma = primeiro_soma + segundo_soma;
+		
+		cout << "O resultado da sua soma e: " << resultado_soma << endl;
+		
+				
+	}
+	
+		if (operacao = 2)
+	{
+		cout << "A operacao selecionada foi Subtracao, digite o primeiro numero que deseja subtrair: ";
+		cin >> primeiro_sub;
+		cout << "Agora digite o numero que deseja subtrair: ";
+		cin >> segundo_sub;
+		
+		resultado_sub = primeiro_sub - segundo_sub;
+		
+		cout << "O resultado da sua subtracao e: " << resultado_sub << endl;
+		
+	}
+	
+		if (operacao = 3)
+	{
+		cout << "A operacao selecionada foi Divisao, digite o primeiro numero: ";
+		cin >> primeiro_div;
+		cout << "Agora digite o numero que deseja dividir: ";
+		cin >> segundo_div;
+		
+		resultado_div = primeiro_div / segundo_div;
+		
+		cout << "O resultado da sua divisao e: " << resultado_div << endl;
+		
+	}
+	
+		if (operacao = 4)
+	{
+		cout << "A operacao selecionada foi Multiplicacao, digite o primeiro numero que deseja multiplicar: ";
+		cin >> primeiro_mult;
+		cout << "Agora digite o segundo numero: ";
+		cin >> segundo_mult;
+		
+		resultado_mult = primeiro_mult * segundo_mult;
+		
+		cout << "O resultado da sua multiplicacao e: " << resultado_mult << endl;
+		
+	}
+	
+	else
+	{
+		cout << "Erro! :( \n Digite uma operacao valida, aperte qualquer tecla para voltar ao comeco.";
+		return main();
+	}
+	
+		cout << " ----------------------- FIM DO CODIGO ----------------------- \n ";
+}
